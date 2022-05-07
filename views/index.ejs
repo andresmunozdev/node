@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/img/LogoPW.png">
+    <title>Api_Rest</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid" id="navcontent">
+                <a> <img src="/img/LogoPW.png" alt="GowPlay" width="40px" height="40px"></a>
+                <a class="navbar-brand" href="#">GowPlay</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <center>
+                                <a data-toggle="modal" data-target="#exampleModal">
+                                    RedesSociales
+                                </a>
+                            </center>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Redes Sociales</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-4" id="icon-redes">
+                                    <div class="container">
+                                        <h2>Instagram</h2>
+                                        <a href="https://www.instagram.com/_gowplay/?hl=es-la" target="_blank">
+                                            <center><img src="/img/icon01.png" alt="Instagram"></center>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-4" id="icon-redes">
+                                    <div class="container">
+                                        <h2>Facebook</h2>
+                                        <a href="https://www.facebook.com/GowPlayLa" target="_blank">
+                                            <center><img src="/img/icon02.png" alt="Facebook"></center>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-4" id="icon-redes">
+                                    <div class="container">
+                                        <h2> Git-Hub</h2>
+                                        <a href="https://github.com/GowPlay " target="_blank">
+                                            <center><img src="/img/icon03.png" alt="GitHub"></center>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <br>
+        <div class="container">
+            <div class="col">
+                <h2>Curso Api-Rest</h2>
+                <a>[ URL Base: https://app-curso-apirest.herokuapp.com/api/listarContenido]</a>
+            </div>
+            <br>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-expanded="false">
+                    Https
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item">Https</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+
+                    <!-- List group -->
+                    <div class="list-group" id="myList" role="tablist">
+                        <a class="list-group-item list-group-item-action active" data-toggle="list" href="#movil"
+                            role="tab">Get - dispositivo movil</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#laptop"
+                            role="tab">Edit - remove</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#load"
+                            role="tab">Post - load</a>
+                    </div>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="movil" role="tabpanel">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <table class="table table-striped">
+                                            <br>
+                                            <hr>
+                                            <p>respuesta de peticion get para obtener datos de la base de datos </p>
+                                            <h4>ruta: <a href="/api/listPeliculas"  target="_blank">https://app-curso-apirest.herokuapp.com/api/listPeliculas</a></h4>
+                                            <hr>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col-5">Status</th>
+                                                    <th scope="col">
+                                                        <Center>Example</Center>
+                                                    </th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="container fa-pull-right">
+                                                            <br>
+                                                            <h3>
+                                                                200
+                                                            </h3>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a>Example value</a>
+                                                        <div class="col-8">
+                                                            <img class="imgjson" src="/img/json.png" alt="Json">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="laptop" role="tabpanel">
+                            <div class="form-group">
+                                <br>
+                                <h4> Get  editar:  <span> /api/editPelicula/:_id</span></h2>
+                                <hr>
+                                <h4> Post actualizar: <span> /api/edit_Pelicula/:_id</span> </h2>
+                                <hr>
+                                <h4> Get eliminar: <span>/api/deletPelicula/:_id</span></h2>
+                            </div>
+                            <div class="container-fluid">
+                                <hr>
+                               <div class="row">
+                                <% for(var i=0; i < pelicula.length; i++){ %>
+                                    <div class="col-4">
+                                        <div class="card text-center">
+                                            <div class="card-body">
+                                                <div class="form-group">
+                                                    <center>
+                                                        <%= pelicula[i].titulo %>
+                                                    </center>
+                                                </div>
+                                                <div class="form-group">
+                                                    <img src="<%= pelicula[i].imagen %>" alt="<%= pelicula[i].titulo %>"
+                                                        height="100px" width="120px">
+                                                </div>
+                                                <div class="form-group">
+                                                    <center>
+                                                        <h2>
+                                                            <%= pelicula[i].categoria %>
+                                                        </h2>
+                                                    </center>
+                                                </div>
+                                                <div class="form-group">
+                                                    <a href="/api/deletPelicula/<%= pelicula[i]._id %>"
+                                                        class="btn btn-danger d-block">
+                                                        ELIMINAR
+                                                    </a>
+                                                    <hr>
+                                                    <a href="/api/editPelicula/<%= pelicula[i]._id %>"
+                                                        class="btn btn-danger d-block">
+                                                        EDITAR
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <% } %>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="load" role="tabpanel">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <br>
+                                        <h3> Carga de contenido hacia la Base De datos:  <span> /api/addPelicula</span></h3>
+                                        <hr>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#registro">
+                                            Nuevo registro
+                                        </button>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="registro" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Redes Sociales
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="container-fluid">
+                                                            <div class="card-body">
+                                                                <form action="/api/addPelicula" method="POST">
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control" name="titulo"
+                                                                        placeholder="titulo" autofocus>
+                                                                    </div>
+                                                                    <hr>
+                                                                    <div class="form-group">
+                                                                        <input type="url" class="form-control" name="imagen"
+                                                                        placeholder="url de imagen" >
+                                                                    </div>
+                                                                    <hr>
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control" name="categoria"
+                                                                        placeholder="categoria" >
+                                                                    </div>
+                                                                    <hr>
+                                                                    <div class="form-group">
+                                                                        <textarea name="descripcion" rows="2" class="form-control" 
+                                                                         placeholder="descripcion"> </textarea>
+                                                                    </div>
+                                                                    <hr>
+                                                                    <div class="form-group">
+                                                                        <input type="url" class="form-control" name="url"
+                                                                        placeholder="url de la pelicula" >
+                                                                    </div>
+                                                                    <hr>
+                                                                    <div class="form-group">
+                                                                        <button class="btn btn-success btn-block"> Guardar</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer id="sticky-footer">
+        <div class="container text-center">
+            <small>Copyright &copy; derechos reservados-GowPlay</small>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

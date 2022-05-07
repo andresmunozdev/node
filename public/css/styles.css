@@ -1,0 +1,38 @@
+*{
+    text-decoration: none;
+    font-size: 12px;
+    font-family: cursive;
+    color: darkcyan;
+    /* background: #007bff;
+    background: linear-gradient(to right, #a1a1a1, #666666); */
+}
+
+#navcontent {
+    background: rgba(34, 34, 34, 0.938) !important;
+    padding: 10px;
+}
+#navcontent a {
+    color: cornsilk !important;
+    font-size: 20px !important;
+    text-align: center;
+}
+#navcontent a:hover {
+    color: cyan !important;
+}
+.imgjson {
+    width: 140%;
+    height: 150px;
+}
+
+
+#sticky-footer{
+    padding: 10px;
+    font-size: 25px;
+    color: darkcyan;
+}
+#icon-redes img{
+    border-left: 15px;
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+}
